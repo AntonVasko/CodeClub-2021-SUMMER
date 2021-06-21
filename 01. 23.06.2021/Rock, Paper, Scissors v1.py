@@ -1,12 +1,19 @@
-#!/bin/python3
 #Rock, Paper, Scissors game v1
 
 from random import randint
+print('Rules:')
+print('''
+    *Rock blunts scissors;
+    *Paper covers rock;
+    *Scissors cut paper;
+ ''')
 r = 'o'
 p = '_____'
 s = '>8'
 
-print('rock: ', r, '\npaper: ', p, '\nscissors: ', s)
+print('Make your  choose:')
+print('rock(r): ', r, '\npaper(p): ', p, '\nscissors(s): ', s)
+print()
 player = input('rock(r), paper(p) or scissors(s)?')
 if player == 'r':
   player = r
