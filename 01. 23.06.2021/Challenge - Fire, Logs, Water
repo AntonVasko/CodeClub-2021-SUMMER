@@ -1,0 +1,54 @@
+#!/bin/python3
+#Challenge: Create a new game. Fire, Logs, Water - game
+
+from random import randint
+print('Fire, Logs, Water - game')
+print('Rules:')
+print('''
+    *Fire burns Logs;
+    *Logs make  bridge over Water;
+    *Water puts out Fire;
+ ''')
+f = 'www'
+l = '@@@'
+w = '~~~'
+
+print('Make your  choose:')
+print('Fire(f): ', f, '\nLogs(l): ', l, '\nWater(w): ', w)
+print()
+player = input('Fire(f), Logs(l) or Water(w)?')
+if player == 'f':
+  player = f
+  print (player, ' vs ', end = ' ')
+elif player == 'l':
+  player = l
+  print (player, ' vs ', end = ' ')
+else:
+  player = w
+  print (player, ' vs ', end = ' ')
+
+chosen = randint(1, 3)
+if chosen == 1:
+  computer = f
+  print(f)
+elif chosen == 2:
+  computer = l
+  print(l)
+else:
+  computer = w
+  print(w)
+
+if player == computer:
+  print('DRAW!')
+elif player == f and computer == w:
+  print('Computer wins!')
+elif player == f and computer == l:
+  print('Player wins!')
+elif player == l and computer == f:
+  print('Computer wins!')
+elif player == l and computer == w:
+  print('Player wins!')
+elif player == w and computer == l:
+  print('Computer wins!')  
+elif player == w and computer == f:
+  print('Player wins!')  
