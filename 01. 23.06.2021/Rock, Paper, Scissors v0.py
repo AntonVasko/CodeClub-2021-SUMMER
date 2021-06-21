@@ -1,10 +1,7 @@
 #Rock, Paper, Scissors game
 
 from random import randint
-r = 'o'
-p = '_____'
-s = '>8'
-print('rock: ', r, '\npaper: ', p, '\nscissors: ', s)
+
 player = input('rock(r), paper(p) or scissors(s)?')
 print (player, ' vs ', end = ' ')
 chosen = randint(1, 3)
