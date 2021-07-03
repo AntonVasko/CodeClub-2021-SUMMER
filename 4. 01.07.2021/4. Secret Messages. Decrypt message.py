@@ -18,4 +18,4 @@ for character in message:
   else:
     decMessage += character
   
-print('New encrypt message of your ', message, ' is ', decMessage)
+print('Your decrypt message of your ', message, ' is ', decMessage)
